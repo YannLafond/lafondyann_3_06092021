@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff'),
+        url('Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('Shrikhand-Regular.woff2') format('woff2'),
+        url('Shrikhand-Regular.woff') format('woff'),
+        url('Shrikhand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+
+    width: 100%;
+    
+}
