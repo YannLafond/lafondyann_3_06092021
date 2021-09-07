@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Black.woff2') format('woff2'),
+        url('Roboto-Black.woff') format('woff'),
+        url('Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('Shrikhand-Regular.woff2') format('woff2'),
+        url('Shrikhand-Regular.woff') format('woff'),
+        url('Shrikhand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    margin: auto;
+    width: auto;    
+}
+
+h1, h2, h3, h4 {
+
+    font-family: 'Shrikhand-Regular', sans-serif ;
+}
+
+p {
+
+    font-family: 'Roboto';
+}
+
+#logo {
+
+    width: auto;
+    margin: 5% 50%;    
+}
+
+#recherche {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    background-color: #eaeaea;
+}    
+
+input [type=search] {
+    
+    border: 1px solid #eaeaea;
+    font-weight: bold;
+    background-color: #eaeaea;
+}
+
+form img {
+
+    height: 15px;
+    width: 15px;
+}
+
+#head {
+
+    background-color: #f6f6f6;
+}

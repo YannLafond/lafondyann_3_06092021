@@ -7,6 +7,9 @@
     <title>Oh my food reservation de menu</title>     
 	<link rel="stylesheet" href="style.css" />    
     <link rel="shortcut icon" type="image/png" href="logo/ohmyfood.png"/>
+    <link rel="preload" href="fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Shrikhand-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
 </head>
     <body>
         <header>
@@ -14,16 +17,22 @@
                 <img src="logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
             </div>
 
-                <form method="post" action="">        
-
-                    <img src="" alt=""/>
-                        <input id="lieu" type="search" value="Paris, Belleville"/> 
-                            <h2> Réservez le menu qui vous convient</h2>
-                            <p>Découvrez des restaurants d'exeception,</p>
-                            <p>séléctionnés par nos soins.</p>
-
-                        <input id="search" type="submit" value="Explorer nos restaurants"/>
-                </form>        
+                
+                    <form method="post" action="">
+                        <div id="recherche">
+                            <img src="icon/map-marker-alt-solid.svg" alt=""/>
+                            <input id="lieu" type="search" value="Paris, Belleville"/> 
+                        </div> 
+                        
+                        <div id="head">
+                                    <h2> Réservez le menu qui vous convient</h2>
+                                    <p>Découvrez des restaurants d'exeception,</p>
+                                    <p>séléctionnés par nos soins.</p>
+                        
+                            <input id="tap" type="submit" value="Explorer nos restaurants"/>
+                        </div>     
+                    </form>
+                           
         </header>
 
         <section id="fonctionnement">
