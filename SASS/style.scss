@@ -196,6 +196,10 @@ footer {
             margin: 5px;
         }
 
+        h3 {
+
+            
+        }
         img {
 
             width: 15px;
@@ -204,4 +208,11 @@ footer {
             display: inline-block;
         }        
     
+}
+
+/* pages des menus*/
+
+.btn-menu {
+
+    @extend .btn
 }

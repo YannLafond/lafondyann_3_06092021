@@ -89,7 +89,7 @@ form img {
   margin: 0 10px 0 10px;
 }
 
-.btn, .btn-actif, .btn-push {
+.btn, .btn-menu, .btn-actif, .btn-push {
   display: flex;
   align-items: center;
   width: 100%;
@@ -100,7 +100,7 @@ form img {
   box-shadow: 0 0 5px gray;
   border-radius: 10px;
 }
-.btn img, .btn-actif img, .btn-push img {
+.btn img, .btn-menu img, .btn-actif img, .btn-push img {
   width: 15px;
   height: 15px;
   margin: 0 10px 0 10px;
@@ -152,5 +152,7 @@ footer img {
   margin-right: 5px;
   display: inline-block;
 }
+
+/* pages des menus*/
 
 /*# sourceMappingURL=style.css.map */
