@@ -18,14 +18,20 @@
     font-display: swap;
 }
 
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiare: #99E2D0;
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: white;
-    margin: auto;
-    width: auto;    
+    background-color: rgb(153, 16, 16);
+    margin: 0;
+    padding: 0;
+      
 }
 
 h1, h2, h3, h4 {
@@ -33,41 +39,169 @@ h1, h2, h3, h4 {
     font-family: 'Shrikhand-Regular', sans-serif ;
 }
 
-p {
+p, a {
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+
+    list-style-type: none;    
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
+}
+
+header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;     
+    width: 100%;
+
 }
 
 #logo {
 
-    width: auto;
-    margin: 5% 50%;    
+    width: 100%;
+      
 }
 
 #recherche {
 
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 40px;
+    align-items: center;    
     width: 100%;
     background-color: #eaeaea;
-}    
+} 
 
-input [type=search] {
-    
+
+
+.btn-lieu {
+    display: flex;
+    width: 100%;
+    height: 40px;
     border: 1px solid #eaeaea;
     font-weight: bold;
     background-color: #eaeaea;
+
+    
+}
+
+.btn-push {
+
+    @extend .btn;
+    
 }
 
 form img {
 
     height: 15px;
     width: 15px;
+    
 }
 
 #head {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c53535;
+}
+
+#fonctionnement {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 10px;    
+
+    
+}
+
+.btn {
+
+    display: flex;    
+    align-items: center;    
+    width: 100%;
+    height: 70px;
+    margin: 10px;
     background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
+    box-shadow: 0 0 5px gray;
+    border-radius: 10px;  
+
+        img {
+
+            width: 15px;
+            height: 15px;
+            margin: 0 10px 0 10px;
+            
+        }        
+}
+
+.btn-actif {
+
+    @extend .btn;
+    background-color: #f5edff;
+}
+
+#restaurants {
+
+    width: 100%;
+    background-color: #eaeaea;
+    
+}
+
+.vignette-restaurant {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 235px;
+    margin: 10px;    
+    border: 1px solid #eaeaea;
+           
+}
+
+.vignette_restaurant_img {
+
+    height: 170px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-size: 100% 100%;
+    object-fit: cover;
+}
+
+.vignette_restaurant_text {
+
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+}
+
+footer {
+
+    width: 100%;
+    background-color: #353535;
+
+        h3, a {
+
+            color: white;
+            margin: 5px;
+        }
+
+        img {
+
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            display: inline-block;
+        }        
+    
 }
