@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,72 +7,77 @@
     <title>restaurant A la française</title>
     <link rel="stylesheet" href="style.css" />    
     <link rel="shortcut icon" type="image/png" href="logo/ohmyfood.png"/>
-    <link rel="preload" href="fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Thin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Shrikhand-Regular.woff2" as="font" type="font/woff2" crossorigin>
 </head>
     <body>
         <header>
+            
             <div id="logo">
+                <a href="index.html"><img src="icon/arrow-left-solid.svg" alt="Acceuil"></a>
                 <img src="logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
             </div>
-            <img class="vignette_restaurant_img" src="image/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
+            <img class="card_menu_img" src="image/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
         </header>
 
-        <section>
-            <h2>A la française<img src="" alt=""></h2>
+        <section id="menu">
+            <h2>A la française<img src="icon/heart-regular.svg" alt="favorite"></h2>
 
-           <div class="entree">
+           <div class="menu">
+                <h3>ENTREES</h3>
+                    <div class="lign"></div>
+                        <div class="btn-menu">
+                            <h4>Tartare de poulpe acidulé</h4>
+                            <p>Aux zests d'orange <span>25€</span></p>
+                        </div>
 
-                <div class="btn-menu">
-                    <h4>Tartare de poulpe acidulé</h4>
-                    <p>Aux zests d'orange <span>25€</span></p>
-                </div>
+                        <div class="btn-menu">
+                            <h4>Velouté de légumes d'antan</h4>
+                            <p>Carotte, panais, topinambour <span>35€</span></p>
+                        </div>
 
-                <div class="btn-menu">
-                    <h4>Velouté de légumes d'antan</h4>
-                    <p>Carotte, panais, topinambour <span>35€</span></p>
-                </div>
-
-                <div class="btn-menu">
-                    <h4>Soupe à l'oignon</h4>
-                    <p>Revisitée <span>20€</span></p>
-                </div>        
+                        <div class="btn-menu">
+                            <h4>Soupe à l'oignon</h4>
+                            <p>Revisitée <span>20€</span></p>
+                        </div>        
            </div>
 
-           <div class="plats">
-                
-                <div class="btn-menu">
-                    <h4>Coquilles Saint-Jacques</h4>
-                    <p>Accompagnées d'une purée de panais <span>40€</span></p>
-                </div>
-                
-                <div class="btn-menu">
-                    <h4>Magret de canard</h4>
-                    <p>Et parmentier de pommes de terres <span>35€</span></p>
-                </div>
+           <div class="menu">
+                <h3>PLATS</h3>
+                    <div class="lign"></div>
+                        <div class="btn-menu">
+                            <h4>Coquilles Saint-Jacques</h4>
+                            <p>Accompagnées d'une purée de panais <span>40€</span></p>
+                        </div>
+                        
+                        <div class="btn-menu">
+                            <h4>Magret de canard</h4>
+                            <p>Et parmentier de pommes de terres <span>35€</span></p>
+                        </div>
 
-                <div class="btn-menu">
-                    <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                    <p>Sur son lit de gnocchis aux légumes <span>44€</span></p>
-                </div>                
+                        <div class="btn-menu">
+                            <h4>Pigeonneau d'Ille-et-Vilaine</h4>
+                            <p>Sur son lit de gnocchis aux légumes <span>44€</span></p>
+                        </div>                
            </div>
 
-           <div class="dessert">
+           <div class="menu">
+                <h3>DESSERTS</h3>
+                    <div class="lign"></div>
+                        <div class="btn-menu">
+                            <h4>Pétales de violettes glacés</h4>
+                            <p>Et puréede noisettes <span>18€</span></p>
+                        </div>
+                    
+                        <div class="btn-menu">
+                            <h4>Fondant au chocolat</h4>
+                            <p>Révisité <span>22€</span></p>
+                        </div>
 
-                <div class="btn-menu">
-                    <h4>Pétales de violettes glacés</h4>
-                    <p>Et puréede noisettes <span>18€</span></p>
-                </div>
-            
-                <div class="btn-menu">
-                    <h4>Fondant au chocolat</h4>
-                    <p>Révisité <span>22€</span></p>
-                </div>
-
-                <div class="btn-menu">
-                    <h4>Millefeuille croustillant</h4>
-                    <p>Myrtilles et pâte d'amande <span>23€</span></p>
-                </div>
+                        <div class="btn-menu">
+                            <h4>Millefeuille croustillant</h4>
+                            <p>Myrtilles et pâte d'amande <span>23€</span></p>
+                        </div>
            </div>
 
            <div class="btn-command">

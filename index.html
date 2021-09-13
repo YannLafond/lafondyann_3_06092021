@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
     <title>Oh my food reservation de menu</title>     
 	<link rel="stylesheet" href="style.css" />    
     <link rel="shortcut icon" type="image/png" href="logo/ohmyfood.png"/>
-    <link rel="preload" href="fonts/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Roboto-thin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Shrikhand-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
 </head>
@@ -16,23 +16,22 @@
             <div id="logo">
                 <img src="logo/ohmyfood@2x.svg" alt="logo_ohmyfood">
             </div>
+                <form method="post" action="#">
 
-                <div id="recherche">    
-                    <form method="post" action="">
+                    <div class="search">                    
                         
                             <img src="icon/map-marker-alt-solid.svg" alt=""/>
-                            <input class="btn-lieu" type="search" value="Paris, Belleville"/> 
-                        
-                        
-                        <div id="head">
-                                    <h2> Réservez le menu qui vous convient</h2>
-                                    <p>Découvrez des restaurants d'exeception,</p>
-                                    <p>séléctionnés par nos soins.</p>
-                        
+                            <input class="btn-place" type="search" value="Paris, Belleville"/>                        
+                    </div>        
+                                    <div id="head">
+                                                <h2> Réservez le menu qui vous convient</h2>
+                                                <p>Découvrez des restaurants d'exeception, séléctionnés par nos soins.</p>                                                    
+                                    </div>
+
+                    <div class="push">        
                             <input class="btn-push" type="submit" value="Explorer nos restaurants"/>
-                        </div>     
-                    </form>
-                </div>            
+                    </div>
+                </form>                            
         </header>
 
         <section id="fonctionnement">
@@ -40,67 +39,64 @@
             <h2>Fonctionnement</h2>
 
                 
-                        <div class="btn"><img src="icon/mobile-alt-solid.svg" alt="mobile"/><a href="#" class=.btn>Choisissez un restaurant</a>
-
+                        <div class="btna"><img src="icon/mobile-alt-solid.svg" alt="mobile"/><a href="#">Choisissez un restaurant</a>
                         </div>
 
-                        <div class="btn"><img src="icon/list-ul-solid.svg" alt="list"/><a href="#" class=.btn>Composez votre menu</a>
-                                
+                        <div class="btna"><img src="icon/list-ul-solid.svg" alt="list"/><a href="#">Composez votre menu</a>                                
                         </div>
 
-                        <div class="btn-actif"><img src="icon/store-solid-color.svg" alt="store"/><a href="#" class=.btn>Dégustez au restaurants</a>
-                                
-                        </div>
-                        
+                        <div class="btn-actif"><img src="icon/store-solid-color.svg" alt="store"/><a href="#">Dégustez au restaurants</a>                                
+                        </div>                        
         </section>
 
 
-        <section id="restaurants">
+        <section id="restaurant">
 
             <h2>Restaurants</h2>
                 
-                <div class="vignette_restaurant">
+                <div class="card_restaurant">
 
                     <a href="palette.html">                        
-                            <img class="vignette_restaurant_img"src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
-
-                            <div class="vignette_restaurant_text">
-                                <h4>La palette du goût</h4>
+                            <img class="card_restaurant_img" src="image/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+                                
+                            <div class="card_restaurant_text">
+                                <h4>La palette du goût<img src="icon/heart-regular.svg" alt="favorite"></h4>
                                 <p>Ménilmontant</p>
                             </div>                        
                     </a>
                 </div>                
 
-                <div class="vignette_restaurant">
+                <div class="card_restaurant">
 
                     <a href="enchante.html">                        
-                            <img class="vignette_restaurant_img" src="image/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">                                            
+                            <img class="card_restaurant_img" src="image/stil-u2Lp8tXIcjw-unsplash.jpg" alt="">                                            
                             
-                            <div class="vignette_restaurant_text">
-                                <h4>La note enchantée</h4>
+                            <div class="card_restaurant_text">
+                                <h4>La note enchantée<img src="icon/heart-regular.svg" alt="favorite"></h4>
                                 <p>Charonne</p>
                             </div>                        
                     </a>                
                 </div>
 
-                <div class="vignette_restaurant">
+                <div class="card_restaurant">
 
                     <a href="francaise.html">                        
-                            <img class="vignette_restaurant_img" src="image/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">                              
+                            <img class="card_restaurant_img" src="image/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">                              
                             
-                            <div class="vignette_restaurant_text">
-                                <h4>A la française</h4>
+                            <div class="card_restaurant_text">
+                                <h4>A la française<img src="icon/heart-regular.svg" alt="favorite"></h4>                                
                                 <p>Cité Rouge</p>
                             </div>                        
                     </a>
                 </div>  
                 
-                <div class="vignette_restaurant">
+                <div class="card_restaurant">
+
                     <a href="delice.html">                                
-                            <img class="vignette_restaurant_img"src="image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">                                                                     
+                            <img class="card_restaurant_img" src="image/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">                                                                     
                                 
-                            <div class="vignette_restaurant_text">
-                                <h4>Le délice des sens</h4>
+                            <div class="card_restaurant_text">
+                                <h4>Le délice des sens<img src="icon/heart-regular.svg" alt="favorite"></h4>                                
                                 <p>Folie-Méricourt</p>
                             </div>                        
                     </a>
