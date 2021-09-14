@@ -13,9 +13,6 @@
   font-display: swap;
 }
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 100%;
   background-color: white;
   margin: 0;
@@ -44,9 +41,16 @@ span {
 header {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
+#head {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  text-align: center;
   background-color: #f6f6f6;
 }
 
@@ -56,31 +60,22 @@ header {
   padding: 10px 0 10px 0;
 }
 
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #eaeaea;
-}
-
 /*Base des boutons*/
-.btn, .btn-command, .btn-menu, .btna, .btn-actif, .btn-push {
+.btn, .btn-command, .btn-menu, .box_a, .box_b, .btn-push, .btn-place {
   display: flex;
   width: 100%;
   border-radius: 10px;
   margin: 10px 0 10px 0;
 }
-.btn img, .btn-command img, .btn-menu img, .btna img, .btn-actif img, .btn-push img {
+.btn img, .btn-command img, .btn-menu img, .box_a img, .box_b img, .btn-push img, .btn-place img {
   width: 15px;
   height: 15px;
 }
 
 /* champ de recherche */
 .btn-place {
-  display: flex;
-  align-items: center;
-  width: 100%;
+  align-content: center;
+  width: 80%;
   height: 40px;
   border: 1px solid #eaeaea;
   font-weight: bold;
@@ -89,8 +84,11 @@ header {
 
 /* bouton de recherche */
 .btn-push {
+  flex-direction: column;
   align-items: center;
-  height: 50px;
+  justify-content: center;
+  height: 60px;
+  width: 60%;
   color: white;
   border: none;
   border-radius: 50px;
@@ -102,40 +100,36 @@ form img {
   width: 15px;
 }
 
-#head {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
-}
-
 #fonctionnement {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: white;
+  /*padding-left: 20px;*/
 }
 
-/* bouton de fonctionnement */
-.btna, .btn-actif {
+/* box de fonctionnement */
+.box_a, .box_b {
   align-items: center;
-  height: 60px;
+  height: 70px;
+  width: 90%;
+  border-radius: 20px;
   background-color: #f6f6f6;
-  margin: 10px;
+  font-weight: bold;
 }
-.btna img, .btn-actif img {
-  margin: 0 20px 0 20px;
+.box_a img, .box_b img {
+  margin: 0 25px 0 25px;
 }
 
-.btn-actif {
+.box_b {
   background-color: #f5edff;
 }
 
 #restaurant {
   width: 100%;
   background-color: #eaeaea;
-  margin-top: 20px;
+  padding-top: 20px;
+}
+#restaurant h2 {
+  margin-left: 10px;
 }
 
 .card_restaurant {
@@ -153,7 +147,7 @@ form img {
   height: 170px;
   width: 100%;
   border-radius: 10px 10px 0 0;
-  background-size: 100%;
+  background-size: 100% 100%;
   object-fit: cover;
 }
 
@@ -177,10 +171,16 @@ form img {
 footer {
   width: 100%;
   background-color: #353535;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
-footer h3, footer a {
+footer ul, footer a {
+  margin-bottom: 0;
   color: white;
-  margin: 5px;
+}
+footer h3 {
+  color: white;
+  padding-left: 40px;
 }
 footer img {
   width: 15px;
@@ -209,9 +209,9 @@ footer img {
 
 #menu {
   width: 100%;
-  background-color: #f6f6f6;
+  background-color: #c91b1b;
   border-radius: 30px 30px 0 0;
-  margin-top: -25px;
+  margin-top: -30px;
 }
 #menu img {
   position: absolute;
@@ -221,6 +221,7 @@ footer img {
 }
 #menu h2 {
   margin-left: 20px;
+  padding-top: 10px;
 }
 
 .menu {
