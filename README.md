@@ -36,7 +36,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 ### Livrables attendus
 
 1. Contenu des pages:
----
+
 
 #### Page d'acceuil (x1)
 
@@ -60,7 +60,7 @@ Ohmyfood! est une jeune startup qui voudrait s'imposer sur le marché de la rest
 * Sur les pages de menu, il contient en plus un bouton de retour vers la page d'acceuil.
 
 2. Effets graphique et animations
----
+
 
 Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS, pas de javascript ni de librairie.
 
