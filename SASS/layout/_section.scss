@@ -1,0 +1,102 @@
+#fonctionnement {
+
+    display: flex;
+    flex-direction: column;    
+    width: 100%;       
+    background-color: white;
+    
+        h2 {
+            margin-left: 10px;
+        }
+        
+}
+
+/* box de fonctionnement */
+.box_a {
+
+    
+    display: flex;
+    align-items: center;    
+    height: 70px;
+    width: 90%;
+    margin: 10px 0px 10px 30px;
+    border-radius: 20px;    
+    background-color: #eaeaea;    
+    font-weight: bold;        
+
+        h4 {
+            position: absolute;
+            margin-left: -15px;
+            color: white;
+            background-color: $primary;
+            border: 8px solid $primary;
+            border-radius: 25px;           
+        }
+
+        img {            
+            margin: 0 25px 0 25px;
+            width: 20px;
+            height: 20px;      
+        }        
+}
+
+.box_b {
+
+    @extend .box_a;    
+    background-color: #f5edff;      
+}
+
+#restaurant {
+
+    width: 100%;
+    background-color: #eaeaea;
+    margin-top: 10px;
+    padding-top: 20px;
+    
+        h2 {
+            margin-left: 10px;
+        }
+}
+
+.card_restaurant {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 235px;
+    margin: 20px 10px 20px 10px;    
+    border: 1px solid #eaeaea;
+    background-color: white;
+    border-radius: 10px;           
+}
+
+.card_restaurant_img {
+
+    height: 170px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-size: 100% 100% ;
+    object-fit: cover;
+}    
+
+       
+
+.card_restaurant_text {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0;
+
+        img {                       
+            position: absolute;
+            width: 20px;
+            height: 20px;                            
+            right: 22px;
+            margin-top: 15px;                   
+        }
+
+        h4, p {
+            margin: 5px 0 2px 5px; 
+                       
+        }
+}
