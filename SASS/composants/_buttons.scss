@@ -1,0 +1,28 @@
+/* bouton de recherche */
+.btn-push {
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 60px;
+    width: 60%;   
+    color: white;
+    border: none;
+    border-radius: 50px;
+    background: $degrade1;
+    margin-bottom: 40px;    
+}
+
+/* bouton commander sur les pages menus*/
+.btn-command {
+
+    @extend .btn-push;    
+    font-weight: bold;    
+    margin: 10px 0 0 0;    
+
+        p {            
+            color: white;
+        }         
+}

@@ -1,0 +1,23 @@
+footer {
+
+    width: 100%;
+    background-color: $footer;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+        ul, a {
+            margin-bottom: 0;
+            color: white;
+        }
+
+        h3 {
+            color: white;            
+            padding-left: 40px;
+        }            
+        
+        img {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;            
+        }    
+}
