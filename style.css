@@ -50,6 +50,7 @@ span {
 
 /* bouton de recherche */
 .btn-push, .btn-command {
+  box-shadow: 3px 3px 8px #d3d3d3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,10 +94,11 @@ span {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  margin-left: 20px;
 }
 .menu h3 {
   margin-bottom: 5px;
-  margin-left: 10px;
+  margin-left: 12px;
 }
 
 .lign {
@@ -106,22 +108,26 @@ span {
 }
 
 .box-menu {
+  box-shadow: 3px 3px 8px #d3d3d3;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  position: relative;
   width: 90%;
   height: 30%;
   border-radius: 10px;
   margin: 10px;
 }
 .box-menu h4, .box-menu p {
-  margin: 5px;
+  margin: 5px 0 5px 5px;
+  padding: -5px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .box-menu span {
   position: absolute;
-  right: 40px;
+  right: 10px;
+  bottom: 10px;
 }
 
 /* Header page d'acceuil */
@@ -154,6 +160,7 @@ header {
 
 /* champ de recherche */
 #search {
+  box-shadow: inset 0 2px 2px grey;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,6 +199,7 @@ header {
 
 /* box de fonctionnement */
 .box_a, .box_b {
+  box-shadow: 3px 3px 8px #d3d3d3;
   display: flex;
   align-items: center;
   height: 70px;
@@ -229,6 +237,7 @@ header {
 }
 
 .card_restaurant {
+  box-shadow: 3px 3px 8px #d3d3d3;
   display: flex;
   position: relative;
   flex-direction: column;

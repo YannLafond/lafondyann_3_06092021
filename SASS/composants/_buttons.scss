@@ -1,5 +1,6 @@
 /* bouton de recherche */
-.btn-push {    
+.btn-push { 
+    @include general_box_shadows;   
     display: flex;
     align-items: center;
     justify-content: center;    

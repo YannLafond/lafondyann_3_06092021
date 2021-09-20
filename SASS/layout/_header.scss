@@ -35,7 +35,7 @@ header {
 
 /* champ de recherche */
 #search {
-    
+    @include box_shadows_inset_top;
     display: flex;
     justify-content: center;
     align-items: center;
