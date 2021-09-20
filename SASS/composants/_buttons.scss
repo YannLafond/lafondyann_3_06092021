@@ -8,7 +8,7 @@
     justify-content: center; 
     height: 60px;
     width: 60%;   
-    color: white;
+    color: $base_color;
     border: none;
     border-radius: 50px;
     background: $degrade1;
@@ -20,9 +20,9 @@
 
     @extend .btn-push;    
     font-weight: bold;    
-    margin: 10px 0 0 0;    
+    margin: 10px 0 10px 0;    
 
         p {            
-            color: white;
+            color: $base_color;
         }         
 }

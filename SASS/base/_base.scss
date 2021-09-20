@@ -1,9 +1,19 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('fonts/Roboto-Thin.woff2') format('woff2'),
-        url('fonts/Roboto-Thin.woff') format('woff'),
-        url('fonts/Roboto-Thin.ttf') format('truetype');
-    font-weight: 100;
+    src: url('fonts/Roboto-Black.woff2') format('woff2'),
+        url('fonts/Roboto-Black.woff') format('woff'),
+        url('fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto-light';
+    src: url('fonts/Roboto-Light.woff2') format('woff2'),
+        url('fonts/Roboto-Light.woff') format('woff'),
+        url('fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
@@ -21,28 +31,26 @@
 body {
     
     width: 100%;
-    background-color: white;
+    background-color: $base_color;
     margin: 0;
     padding: 0;         
 }
 
-h1, h2 {
+h1 {
 
-    font-family: 'Shrikhand', sans-serif ;
-    font-weight: bold;
+    font-family: 'Shrikhand', sans-serif ;    
 }
 
-h3, h4 {
+h2, h3, h4 {
 
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif;    
 }
 
 p, a {
 
     color: initial;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;     
+    font-family: 'Roboto-light', sans-serif;      
 }
 
 li {
@@ -52,5 +60,5 @@ li {
 
 span {
 
-    font-weight: bold;
+    font-family: 'Roboto';
 }
