@@ -1,13 +1,11 @@
 /* bouton de recherche */
-.btn-push {
-
-    
+.btn-push {    
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;    
     height: 60px;
     width: 60%;   
+    font-size: 1.2em;
     color: $base_color;
     border: none;
     border-radius: 50px;
@@ -18,11 +16,12 @@
 /* bouton commander sur les pages menus*/
 .btn-command {
 
-    @extend .btn-push;    
+    @extend .btn-push;       
     font-weight: bold;    
-    margin: 10px 0 10px 0;    
+    margin: 10px 0 30px 80px;    
 
         p {            
             color: $base_color;
+                        
         }         
 }
