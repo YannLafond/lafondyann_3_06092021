@@ -1,17 +1,6 @@
 /* bouton de recherche */
 .btn-push { 
-    @include general_box_shadows;   
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    height: 60px;
-    width: 60%;   
-    font-size: 1.2em;
-    color: $base_color;
-    border: none;
-    border-radius: 50px;
-    background: $degrade1;
-    margin-bottom: 40px;    
+   @include btn;   
 }
 
 /* bouton commander sur les pages menus*/

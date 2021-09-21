@@ -1,3 +1,4 @@
+/* box fontionement*/
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Black.woff2") format("woff2"), url("fonts/Roboto-Black.woff") format("woff"), url("fonts/Roboto-Black.ttf") format("truetype");
@@ -62,6 +63,11 @@ span {
   border-radius: 50px;
   background: linear-gradient(-45deg, #9356DC, #FF79DA);
   margin-bottom: 40px;
+  cursor: pointer;
+}
+.btn-push:hover, .btn-command:hover {
+  box-shadow: 3px 3px 8px #a0a0a0;
+  background: linear-gradient(-45deg, #ae80e5, #fface8);
 }
 
 /* bouton commander sur les pages menus*/
@@ -199,7 +205,6 @@ header {
 
 /* box de fonctionnement */
 .box_a, .box_b {
-  box-shadow: 3px 3px 8px #d3d3d3;
   display: flex;
   align-items: center;
   height: 70px;
@@ -208,6 +213,7 @@ header {
   border-radius: 20px;
   background-color: white;
   font-weight: bold;
+  box-shadow: 3px 3px 8px #d3d3d3;
 }
 .box_a h4, .box_b h4 {
   position: absolute;
@@ -246,6 +252,9 @@ header {
   margin: 20px 10px 20px 10px;
   border: 1px solid #eaeaea;
   border-radius: 10px;
+}
+.card_restaurant:hover {
+  box-shadow: 3px 3px 8px #a0a0a0;
 }
 
 .card_restaurant_img {
