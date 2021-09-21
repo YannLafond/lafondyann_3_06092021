@@ -79,6 +79,94 @@ span {
   color: white;
 }
 
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: black;
+  background-color: #99E2D0;
+}
+
+.loader1 {
+  margin-top: 200px;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  border-radius: 180px;
+  align-items: center;
+  border: 6px solid #99E2D0;
+}
+.loader1::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 180px;
+  border: 20px solid transparent;
+  border-left-color: #FF79DA;
+  border-right-color: #9356DC;
+  animation: spin-loader 3s linear infinite;
+}
+
+.loader2 {
+  position: relative;
+  margin-left: 45px;
+  margin-top: 45px;
+  height: 80px;
+  width: 80px;
+  border-radius: 80px;
+  align-items: center;
+  border: 5px solid #99E2D0;
+}
+.loader2::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+  border-radius: 80px;
+  border: 20px solid transparent;
+  border-bottom-color: #FF79DA;
+  border-top-color: #9356DC;
+  animation: spin-loader 2s linear infinite;
+}
+
+@keyframes spin-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*.check-box {
+
+    position: absolute;
+    height: 100%;
+    width: 60px;
+    right: 0px;
+    background-color: $tertiary;
+}
+
+.box-menu {
+    &:active {
+        & > .checkbox {
+            transform: scaleX(1);
+            animation-name: checkbox 1s;
+        }
+    }
+}*/
 /* pages des menus*/
 #menu {
   width: 100%;
@@ -123,6 +211,20 @@ span {
   height: 30%;
   border-radius: 10px;
   margin: 10px;
+  cursor: pointer;
+}
+.box-menu:active > .check-box {
+  animation: checkbox 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes checkbox {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .box-menu h4, .box-menu p {
   margin: 5px 0 5px 5px;
@@ -274,7 +376,7 @@ header {
   padding-top: 5px;
   border-radius: 5px;
   text-align: center;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #008766;
 }
 

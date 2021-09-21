@@ -53,6 +53,24 @@
     height: 30%;    
     border-radius: 10px;
     margin: 10px ;
+    cursor: pointer;
+
+    &:active {
+        & > .check-box {
+            animation: checkbox 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+    }
+
+    @keyframes checkbox {
+        0% {
+          transform: translateX(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
     
 
         h4, p {
