@@ -2,7 +2,6 @@
 @import "./utils/mixins";
 @import "./base/base";
 @import "./composants/buttons";
-@import "./composants/anim";
 @import "./pages/menu";
 @import "./layout/header";
 @import "./layout/section";
@@ -15,6 +14,83 @@
 
 
 
+.loader {
+    
+    display: flex;    
+    align-items: center;        
+    position: fixed;
+    align-content: center; 
+    justify-content: center;
+    
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 1;    
+    background-color: $tertiary;
+    animation: load 3s ease-in-out forwards;
+}
 
+.loader1 {
+    
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border-radius: 180px;
+    align-items: center;
+    border: 6px solid $tertiary;
+
+        &::after{
+
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -6px;
+            bottom: -6px;
+            right: -6px;   
+            border-radius: 180px; 
+            border: 20px solid transparent ;
+            border-left-color: $secondary;
+            border-right-color: $primary;
+            animation: spinner 3s linear infinite;
+        }
+}
+
+.loader2 {
+    position: relative;
+    margin-left: 45px;
+    margin-top: 45px;
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+    align-items: center;
+    border: 5px solid $tertiary;
+
+        &::after {
+
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            bottom: -5px;
+            right: -5px;   
+            border-radius: 80px; 
+            border: 20px solid transparent ;
+            border-bottom-color: $secondary;
+            border-top-color: $primary;
+            animation: spinner 2s linear infinite;
+        }    
+}
+
+
+@keyframes load {
+    0%{ visibility: visible;}
+    100%{ visibility: hidden;}
+}
+
+@keyframes spinner {
+
+    0%{ transform: rotate(0deg); }
+    100%{ transform: rotate(360deg); }
+}
 
 
