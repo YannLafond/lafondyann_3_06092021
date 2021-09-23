@@ -4,6 +4,7 @@ header {
     display: flex;
     flex-direction: column;    
     width: 100%;    
+    z-index: 1;
        
 }
 #logo {
@@ -66,5 +67,6 @@ header {
 .card_menu_img {
     
     border-radius: 0;
-    height: 250px;        
+    height: 250px;   
+    object-fit: cover;     
 }
