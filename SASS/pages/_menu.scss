@@ -34,6 +34,21 @@
             margin-bottom: 5px;
             margin-left: 12px;           
         }
+
+        h4, p {
+            margin: 5px 0 5px 5px;            
+            white-space: nowrap;
+            text-overflow: ellipsis;  
+            overflow: hidden;           
+        }
+
+        span {
+            position: absolute;            
+            right: 10px;
+            bottom: 10px;
+
+                          
+        }      
 }
 
 .lign {
@@ -63,8 +78,8 @@
     }
 
     .check-box {
-
-        position: absolute;        
+        display: flex;
+        position: absolute;           
         height: 100%;
         width: 50px;
         right: 0;
@@ -73,11 +88,11 @@
         transform: translatex(40px);
         transform-origin: right ;
         transform: scalex(0);
-        transition: transform 1s ease-in-out;
+        transition: transform 1s linear;
+        
 
             img {
-                @include img-check; 
-                           
+                @include img-check;                            
                 animation: rotate-check 1s  ;                
             }        
     }
@@ -91,17 +106,4 @@
         }
       }
 
-        h4, p {
-            margin: 5px 0 5px 5px;
-            padding: -5px;
-            white-space: nowrap;
-            text-overflow: ellipsis;  
-            overflow: hidden;           
-        }
-
-        span {
-            position: absolute;            
-            right: 10px;
-            bottom: 10px;
-                                 
-        }
+        

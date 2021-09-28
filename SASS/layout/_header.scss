@@ -25,10 +25,15 @@ header {
 #head {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column;    
     justify-content: center;
     align-items: center;
     text-align: center;
+
+        p, h2 {
+
+            width: 67%;
+        }
     
 }
 

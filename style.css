@@ -22,6 +22,8 @@
 }
 body {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -184,6 +186,17 @@ span {
   margin-bottom: 5px;
   margin-left: 12px;
 }
+.menu h4, .menu p {
+  margin: 5px 0 5px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 
 .lign {
   width: 50px;
@@ -208,6 +221,7 @@ span {
 }
 
 .check-box {
+  display: flex;
   position: absolute;
   height: 100%;
   width: 50px;
@@ -217,7 +231,7 @@ span {
   transform: translatex(40px);
   transform-origin: right;
   transform: scalex(0);
-  transition: transform 1s ease-in-out;
+  transition: transform 1s linear;
 }
 .check-box img {
   height: 10px;
@@ -236,20 +250,6 @@ span {
     transform: rotate(360deg);
   }
 }
-h4, p {
-  margin: 5px 0 5px 5px;
-  padding: -5px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-span {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
 /* Header page d'acceuil */
 header {
   display: flex;
@@ -277,6 +277,9 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+#head p, #head h2 {
+  width: 67%;
 }
 
 /* champ de recherche */
