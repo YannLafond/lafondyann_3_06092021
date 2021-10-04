@@ -1,6 +1,8 @@
 /* bouton de recherche */
 .btn-push { 
-   @include btn;   
+
+   @include btn;
+      
 }
 
 /* bouton commander sur les pages menus*/
@@ -11,7 +13,6 @@
     margin: 10px 0 30px 80px;    
 
         p {            
-            color: $base_color;
-                        
+            color: $base_color;                        
         }         
 }

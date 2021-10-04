@@ -1,4 +1,4 @@
-/* box fontionement*/
+/* card fontionement*/
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Black.woff2") format("woff2"), url("fonts/Roboto-Black.woff") format("woff"), url("fonts/Roboto-Black.ttf") format("truetype");
@@ -22,8 +22,6 @@
 }
 body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -128,6 +126,7 @@ span {
     transform: rotate(360deg);
   }
 }
+/* Le coeur qui se rempli */
 /* bouton de recherche */
 .btn-push, .btn-command {
   box-shadow: 3px 3px 8px #d3d3d3;
@@ -135,8 +134,8 @@ span {
   align-items: center;
   justify-content: center;
   height: 60px;
-  width: 60%;
-  font-size: 1.2em;
+  min-width: 70%;
+  font-size: 1.5em;
   color: white;
   border: none;
   border-radius: 50px;
@@ -160,15 +159,15 @@ span {
 
 /* pages des menus*/
 #menu {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  border-radius: 30px 30px 0 0;
-  z-index: 2;
 }
 #menu img {
   position: absolute;
   width: 20px;
-  height: 20px;
+  height: 30px;
   right: 20px;
 }
 #menu h2 {
@@ -197,14 +196,15 @@ span {
   right: 10px;
   bottom: 10px;
 }
-
-.lign {
+.menu h3::after {
+  content: "";
+  display: block;
   width: 50px;
-  border-bottom: 2px solid #99E2D0;
-  margin-left: 10px;
+  height: 2px;
+  background-color: #99E2D0;
 }
 
-.box-menu {
+.card-menu {
   box-shadow: 3px 3px 8px #d3d3d3;
   display: flex;
   flex-direction: column;
@@ -216,40 +216,45 @@ span {
   margin: 10px;
   cursor: pointer;
 }
-.box-menu:hover .check-box {
-  transform: scale(1);
+.card-menu .card-menu-text {
+  flex-direction: column;
+}
+.card-menu .card-menu-price {
+  justify-content: flex-end;
 }
 
-.check-box {
-  display: flex;
-  position: absolute;
-  height: 100%;
-  width: 50px;
-  right: 0;
-  border-radius: 0 10px 10px 0;
-  background-color: #99E2D0;
-  transform: translatex(40px);
-  transform-origin: right;
-  transform: scalex(0);
-  transition: transform 1s linear;
-}
-.check-box img {
-  height: 10px;
-  width: 10px;
-  border: 5px solid white;
-  background-color: white;
-  border-radius: 20px;
-  animation: rotate-check 1s;
-}
+/*.card-menu-checkbox {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        right: 0px;           
+        height: 100%;
+        width: 50px;        
+        border-radius: 0 10px 10px 0;        
+        background-color: $tertiary;
 
-@keyframes rotate-check {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+            img {                
+                @include img-check;                            
+                animation: rotate-check 1s  ;                
+            }   
+
+            :checked   {
+
+                transform: translateX(40px);  
+                transform-origin: right  ;        
+                transition: transform .6s linear;      
+        }
+    }
+
+    @keyframes rotate-check {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }*/
 /* Header page d'acceuil */
 header {
   display: flex;
@@ -260,6 +265,7 @@ header {
 
 #logo {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 20px 0 20px 0;
 }
@@ -271,15 +277,10 @@ header {
   height: 15px;
 }
 
-#head {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-#head p, #head h2 {
-  width: 67%;
+.card_menu_img {
+  border-radius: 0;
+  height: 250px;
+  object-fit: cover;
 }
 
 /* champ de recherche */
@@ -289,73 +290,133 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 40px;
-  border: 1px solid #eaeaea;
-  font-weight: bold;
+  padding: 15px 0 15px 0;
   background-color: #eaeaea;
 }
-#search img {
-  height: 20px;
-  width: 20px;
+#search .fas {
   margin-right: 20px;
+  font-size: 1.3em;
 }
 #search input {
+  width: 50%;
+  font-size: 1.5em;
+  font-weight: bold;
   border: none;
 }
 
+@media only screen and (min-width: 600px) {
+  #search input {
+    width: 20%;
+  }
+}
 .place {
   background-color: #eaeaea;
 }
 
-.card_menu_img {
-  border-radius: 0;
-  height: 250px;
-  object-fit: cover;
+#description {
+  padding: 20px 10px;
+  background-color: #f6f6f6;
 }
 
-#fonctionnement {
+.contain_description {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  align-items: center;
+  text-align: center;
 }
-#fonctionnement h2 {
-  margin-left: 10px;
+.contain_description p, .contain_description h2 {
+  font-size: 1.5rem;
 }
 
-/* box de fonctionnement */
-.box_a, .box_b {
+/* card de fonctionnement */
+#fonction {
+  padding: 20px 10px;
+}
+
+.section_title {
+  font-size: 1.5em;
+}
+
+.fonction__lists {
+  position: relative;
+  counter-reset: countlist;
+  padding-left: 20px;
+}
+
+.fonction__list--a, .fonction__list--b {
   display: flex;
   align-items: center;
-  height: 70px;
-  width: 90%;
-  margin: 10px 0px 10px 30px;
+  justify-content: center;
+  position: relative;
+  font-size: 1.35em;
+  font-weight: bold;
+  margin: 30px 0 30px 0;
   border-radius: 20px;
   background-color: white;
-  font-weight: bold;
   box-shadow: 3px 3px 8px #d3d3d3;
+  background-color: #f6f6f6;
 }
-.box_a h4, .box_b h4 {
+.fonction__list--a .fas, .fonction__list--b .fas {
   position: absolute;
-  margin-left: -15px;
-  color: white;
-  background-color: #9356DC;
-  border: 8px solid #9356DC;
-  border-radius: 50px;
+  left: 30px;
 }
-.box_a img, .box_b img {
-  margin: 0 25px 0 25px;
-  width: 20px;
-  height: 20px;
+.fonction__list--a::before, .fonction__list--b::before {
+  counter-increment: countlist 1;
+  content: counter(countlist) " ";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356DC;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
 }
 
-.box_b {
+.fonction__list--b {
   background-color: #f5edff;
 }
+.fonction__list--b .fas {
+  color: #9356DC;
+}
 
+@media only screen and (min-width: 1024px) {
+  .head {
+    display: flex;
+  }
+  .head .btn-push, .head .btn-command {
+    margin-top: 30px;
+  }
+  .head .contain_description {
+    margin-top: 50px;
+    padding: 0 30px 0 30px;
+  }
+  .head #description, .head #fonction {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .section_title {
+    text-align: center;
+    font-size: 1.7em;
+  }
+
+  .contain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contain .card_restaurant {
+    width: 40%;
+    margin: 20px;
+  }
+}
 #restaurant {
-  width: 100%;
-  margin-top: 10px;
-  padding-top: 20px;
+  padding: 20px 10px;
+  background-color: #f6f6f6;
 }
 #restaurant h2 {
   margin-left: 10px;
@@ -367,8 +428,8 @@ header {
   position: relative;
   flex-direction: column;
   width: auto;
-  height: 235px;
-  margin: 20px 10px 20px 10px;
+  height: 250px;
+  margin: 20px 0 20px 0;
   border: 1px solid #eaeaea;
   border-radius: 10px;
 }
@@ -403,15 +464,17 @@ header {
   border-radius: 0 0 10px 10px;
   margin-top: 0;
 }
-.card_restaurant_text img {
+.card_restaurant_text .far {
   position: absolute;
   width: 20px;
   height: 20px;
   right: 22px;
   margin-top: 15px;
+  font-size: 2rem;
 }
 .card_restaurant_text h4, .card_restaurant_text p {
-  margin: 5px 0 2px 5px;
+  font-size: 1.35em;
+  margin: 5px 0 2px 15px;
 }
 
 footer {
@@ -421,18 +484,18 @@ footer {
   padding-bottom: 20px;
 }
 footer ul, footer a {
-  margin-bottom: 0;
+  margin: 5px 0 5px 0;
   color: white;
 }
 footer h1 {
   color: white;
   padding-left: 40px;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
-footer img {
+footer .fas {
   width: 15px;
   height: 15px;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

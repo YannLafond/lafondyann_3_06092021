@@ -6,19 +6,19 @@ footer {
     padding-bottom: 20px;
     
         ul, a {
-            margin-bottom: 0;
+            margin: 5px 0 5px 0;
             color: $base_color;
         }
 
         h1 {
             color: $base_color;            
             padding-left: 40px;
-            font-size: 1.2em;
+            font-size: 1.3em;
         }            
         
-        img {
+        .fas {
             width: 15px;
             height: 15px;
-            margin-right: 5px;            
+            margin-right: 10px;            
         }    
 }
