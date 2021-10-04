@@ -14,20 +14,15 @@
              font-size: 1.3em;
         }
 
-        input {            
-            width: 50%;
+        input { 
+                     
+            width: 220px;
             font-size: 1.5em;
             font-weight: bold;
             border: none;            
         }
     }
 
-@media only screen and (min-width:600px) {
-
-        #search input {
-            width: 20%;
-        }
-}
 
 .place {
 
@@ -129,6 +124,7 @@
 
                 width: 50%;
                 padding: 20px ;
+                background-color: white;
             }
         }
 
@@ -221,7 +217,3 @@
         }
 }
 
-@media only screen and (min-width: 1024px) {
-
-
-}

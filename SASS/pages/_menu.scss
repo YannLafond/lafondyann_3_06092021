@@ -2,44 +2,50 @@
 
 #menu {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    position: relative;    
     width: 100%;
     height: 100%;
-     
-     
-     
+    background-color: #f6f6f6;
+    border-radius: 25px 25px 0 0;
+    z-index: 1000;  
 
-        img {
-            position: absolute;            
-            width: 20px;
-            height: 30px;            
-            right: 20px;
-            
+        .far {
+            @include hearth;
+            margin-top: -6px;
+            right: 30px;            
         }
 
-        h2 {            
-            padding-top: 10px;
-            margin: 0 0 0 20px;        
+        h2 {                       
+            
+            margin: 20px 0 0 20px;
+            font-size: 1.5em;        
         }
 }
+
+
+
 
 .menu {
 
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-left: 20px;        
+    margin-left: 20px;
+    margin-top: 20px;        
 
         h3 {
             margin-bottom: 5px;
-            margin-left: 12px;           
+            margin-left: 12px;
+            font-size: 1.4em;           
         }
 
         h4, p {
             margin: 5px 0 5px 5px;            
             white-space: nowrap;
             text-overflow: ellipsis;  
-            overflow: hidden;           
+            overflow: hidden;
+            font-size: 1.3em           
         }
 
         span {
@@ -69,6 +75,7 @@
     border-radius: 10px;
     margin: 10px ;
     cursor: pointer;
+    background-color: white;
 
     .card-menu-text {        
         flex-direction: column;        
@@ -81,38 +88,34 @@
 
 
     
-/*.card-menu-checkbox {
+.card-menu-checkbox {
         display: flex;
         position: absolute;
         align-items: center;
         justify-content: center;
+        opacity: 0;
         right: 0px;           
         height: 100%;
         width: 50px;        
         border-radius: 0 10px 10px 0;        
         background-color: $tertiary;
         
-            img {                
+            .fas {                
                 @include img-check;                            
-                animation: rotate-check 1s  ;                
-            }   
-            
-            :checked   {
-
-                transform: translateX(40px);  
-                transform-origin: right  ;        
-                transition: transform .6s linear;      
-        }
+          
+      }
     }
-    
-    @keyframes rotate-check {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }*/
+
+.contain-btn-command {
+
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+
+}
+
+
+
 
       
 

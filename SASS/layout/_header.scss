@@ -14,12 +14,13 @@ header {
     justify-content: center;
     margin: 20px 0 20px 0;
 
-        a {
+        .fas {
             position: absolute;
-            left: 20px;
-            top: 20px;    
+            left: 30px;
+            top: 26px;    
             width: 15px;
             height: 15px;
+            font-size: 1.5em;
         }
 }
 

@@ -151,7 +151,8 @@ span {
 /* bouton commander sur les pages menus*/
 .btn-command {
   font-weight: bold;
-  margin: 10px 0 30px 80px;
+  margin-top: 20px;
+  max-width: 70%;
 }
 .btn-command p {
   color: white;
@@ -161,18 +162,26 @@ span {
 #menu {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 100%;
   height: 100%;
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  z-index: 1000;
 }
-#menu img {
+#menu .far {
   position: absolute;
   width: 20px;
-  height: 30px;
-  right: 20px;
+  height: 20px;
+  right: 22px;
+  margin-top: 15px;
+  font-size: 2rem;
+  margin-top: -6px;
+  right: 30px;
 }
 #menu h2 {
-  padding-top: 10px;
-  margin: 0 0 0 20px;
+  margin: 20px 0 0 20px;
+  font-size: 1.5em;
 }
 
 .menu {
@@ -180,16 +189,19 @@ span {
   flex-direction: column;
   flex-wrap: nowrap;
   margin-left: 20px;
+  margin-top: 20px;
 }
 .menu h3 {
   margin-bottom: 5px;
   margin-left: 12px;
+  font-size: 1.4em;
 }
 .menu h4, .menu p {
   margin: 5px 0 5px 5px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-size: 1.3em;
 }
 .menu span {
   position: absolute;
@@ -215,6 +227,7 @@ span {
   border-radius: 10px;
   margin: 10px;
   cursor: pointer;
+  background-color: white;
 }
 .card-menu .card-menu-text {
   flex-direction: column;
@@ -223,38 +236,33 @@ span {
   justify-content: flex-end;
 }
 
-/*.card-menu-checkbox {
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        right: 0px;           
-        height: 100%;
-        width: 50px;        
-        border-radius: 0 10px 10px 0;        
-        background-color: $tertiary;
+.card-menu-checkbox {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  right: 0px;
+  height: 100%;
+  width: 50px;
+  border-radius: 0 10px 10px 0;
+  background-color: #99E2D0;
+}
+.card-menu-checkbox .fas {
+  height: 10px;
+  width: 10px;
+  border: 10px solid white;
+  background-color: white;
+  color: #99E2D0;
+  border-radius: 20px;
+}
 
-            img {                
-                @include img-check;                            
-                animation: rotate-check 1s  ;                
-            }   
+.contain-btn-command {
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
 
-            :checked   {
-
-                transform: translateX(40px);  
-                transform-origin: right  ;        
-                transition: transform .6s linear;      
-        }
-    }
-
-    @keyframes rotate-check {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }*/
 /* Header page d'acceuil */
 header {
   display: flex;
@@ -269,12 +277,13 @@ header {
   justify-content: center;
   margin: 20px 0 20px 0;
 }
-#logo a {
+#logo .fas {
   position: absolute;
-  left: 20px;
-  top: 20px;
+  left: 30px;
+  top: 26px;
   width: 15px;
   height: 15px;
+  font-size: 1.5em;
 }
 
 .card_menu_img {
@@ -298,17 +307,12 @@ header {
   font-size: 1.3em;
 }
 #search input {
-  width: 50%;
+  width: 220px;
   font-size: 1.5em;
   font-weight: bold;
   border: none;
 }
 
-@media only screen and (min-width: 600px) {
-  #search input {
-    width: 20%;
-  }
-}
 .place {
   background-color: #eaeaea;
 }
@@ -396,6 +400,7 @@ header {
   .head #description, .head #fonction {
     width: 50%;
     padding: 20px;
+    background-color: white;
   }
 
   .section_title {

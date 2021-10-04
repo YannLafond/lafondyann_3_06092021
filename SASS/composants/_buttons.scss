@@ -10,7 +10,8 @@
 
     @extend .btn-push;       
     font-weight: bold;    
-    margin: 10px 0 30px 80px;    
+    margin-top: 20px;
+    max-width: 70%;    
 
         p {            
             color: $base_color;                        
