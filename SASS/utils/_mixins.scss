@@ -49,8 +49,7 @@
 @mixin img-check {
    
     height: 10px;
-    width: 10px;
-        
+    width: 10px;        
     border:10px solid white;
     background-color: white;
     color: $tertiary;
@@ -59,12 +58,12 @@
     
 }
 
-@mixin hearth {
-    position: absolute;
-    width: 20px;
-    height: 20px;                            
-    right: 22px;
-    margin-top: 15px;
-    font-size: 2rem;
+@mixin hearth ($colour) {
+    background-color: $colour;
+    mix-blend-mode: lighten;
+    border: 1px solid transparent; 
+    cursor: pointer;   
+    
+           
 }
 

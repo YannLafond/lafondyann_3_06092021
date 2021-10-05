@@ -208,7 +208,7 @@
     margin-top: 0;
 
         .far  {                       
-              @include hearth;                 
+              @include hearth (white);                 
         }
 
         h4, p {
