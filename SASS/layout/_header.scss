@@ -4,7 +4,7 @@ header {
     display: flex;
     flex-direction: column;    
     width: 100%;    
-    z-index: 1;
+    
        
 }
 #logo {
@@ -29,6 +29,7 @@ header {
     
     border-radius: 0;
     height: 250px;
-    object-fit: cover;  
+    object-fit: cover;
+    overflow: hidden;  
       
 }
