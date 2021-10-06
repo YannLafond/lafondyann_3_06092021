@@ -89,6 +89,8 @@
             position: absolute;
             left: -10px;
         }
+
+    .fas {}
 }
 
 .fonction__list--b {
@@ -200,6 +202,13 @@
     color: $new_text;
 }
        
+.card_restaurant_contain {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
 
 .card_restaurant_text {
     display: flex;
