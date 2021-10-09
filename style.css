@@ -127,26 +127,6 @@ span {
   }
 }
 /* Le coeur qui se rempli */
-@keyframes filling {
-  0% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 0.8;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  60% {
-    opacity: 0.4;
-  }
-  80% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 /* deroulement de la page menu */
 @keyframes unwinding {
   0% {
@@ -250,7 +230,7 @@ span {
   border-radius: 25px 25px 0 0;
 }
 
-.title_menu {
+#title_menu {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -258,7 +238,7 @@ span {
   font-size: 1.5em;
   font-style: italic;
 }
-.title_menu h2 {
+#title_menu h2 {
   margin: 20px 0 0 20px;
   font-size: 1.4em;
   font-family: "Shrikhand";
@@ -267,44 +247,10 @@ span {
 
 .like {
   position: relative;
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.8em;
+  width: 1.8em;
   padding: 10px;
   margin: 10px;
-  overflow: hidden;
-}
-
-.like:hover::before {
-  opacity: 1;
-}
-
-.like::before {
-  content: "";
-  opacity: 0;
-  transition: 0.6s;
-  background: linear-gradient(45deg, #9356DC, #FF79DA);
-}
-
-.like::before, .like_icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.like:hover .like_icon--empty {
-  opacity: 0;
-  animation: filling 1s ease-in-out both;
-}
-
-.like_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f6f6f6;
-  mix-blend-mode: lighten;
-  border: 1px solid transparent;
   cursor: pointer;
 }
 
@@ -520,6 +466,7 @@ header {
   position: absolute;
   left: -10px;
 }
+
 .fonction__list--b {
   background-color: #f5edff;
 }
@@ -614,9 +561,6 @@ header {
   flex-direction: column;
   border-radius: 0 0 10px 10px;
   margin-top: 0;
-}
-.card_restaurant_text .far {
-  background-color: white;
 }
 .card_restaurant_text h4, .card_restaurant_text p {
   font-size: 1.35em;
