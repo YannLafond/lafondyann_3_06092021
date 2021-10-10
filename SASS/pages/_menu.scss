@@ -1,5 +1,6 @@
 /* pages des menus*/
 
+
 #menu {
     display: flex;
     flex-direction: column;
@@ -31,37 +32,45 @@
 .like {
 
     position: relative;    
-    height: 1.8em;
-    width: 1.8em;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;    
+    height: 48px;
+    width: 48px;    
+    margin: 12px;
+    background-color: #f6f6f6;
+    cursor: pointer;
+    
+        .fa-heart {
+            position: absolute;
+            font-size: 48px;
+        }
+        &:hover .heart {
+            color: transparent;
+        }
+        &:hover .heart_full  {
+            opacity: 1;
+            transform: translateZ(0%);
+            transition: 3s ease;
+        }
+}       
+
+
+
+.heart_full {
+
+    height: 100%;
+    width: 100%;
+    top: 0px;        
+    opacity: 0;
+    transform: translateZ(100%);
+    transition: 3s ease;    
+    
+        .fa {        
+            color: $primary;
+            background: -webkit-linear-gradient($primary, $secondary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;            
+        }
+    
 }
-
-               
-
-
-
-
-
-
-
-        
-
-
-    
-     
-     
-    
-    
-    
-    
-    
-      
-
-
-
-
 
 
 .menu {
@@ -126,7 +135,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
         }
-    }
+}
 
     .card_menu_price {
         
@@ -170,16 +179,8 @@
         .fa-check {                
             @include img-check;                            
       
-  }
+        } 
 }
-
-
-
-
-
-
-    
-
 
 .contain-btn-command {
 
@@ -188,11 +189,3 @@
     background-color: #f6f6f6;
 
 }
-
-
-
-
-      
-
-
-        

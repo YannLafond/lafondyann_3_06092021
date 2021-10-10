@@ -126,7 +126,6 @@ span {
     transform: rotate(360deg);
   }
 }
-/* Le coeur qui se rempli */
 /* deroulement de la page menu */
 @keyframes unwinding {
   0% {
@@ -247,11 +246,38 @@ span {
 
 .like {
   position: relative;
-  height: 1.8em;
-  width: 1.8em;
-  padding: 10px;
-  margin: 10px;
+  height: 48px;
+  width: 48px;
+  margin: 12px;
+  background-color: #f6f6f6;
   cursor: pointer;
+}
+.like .fa-heart {
+  position: absolute;
+  font-size: 48px;
+}
+.like:hover .heart {
+  color: transparent;
+}
+.like:hover .heart_full {
+  opacity: 1;
+  transform: translateZ(0%);
+  transition: 3s ease;
+}
+
+.heart_full {
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  opacity: 0;
+  transform: translateZ(100%);
+  transition: 3s ease;
+}
+.heart_full .fa {
+  color: #9356DC;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menu {
