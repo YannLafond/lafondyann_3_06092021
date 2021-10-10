@@ -46,8 +46,7 @@
             color: transparent;
         }
         &:hover .heart_full  {
-            opacity: 1;
-            transform: translateZ(0%);
+            opacity: 1;            
             transition: 3s ease;
         }
 }       
@@ -59,8 +58,7 @@
     height: 100%;
     width: 100%;
     top: 0px;        
-    opacity: 0;
-    transform: translateZ(100%);
+    opacity: 0;    
     transition: 3s ease;    
     
         .fa {        

@@ -261,7 +261,6 @@ span {
 }
 .like:hover .heart_full {
   opacity: 1;
-  transform: translateZ(0%);
   transition: 3s ease;
 }
 
@@ -270,7 +269,6 @@ span {
   width: 100%;
   top: 0px;
   opacity: 0;
-  transform: translateZ(100%);
   transition: 3s ease;
 }
 .heart_full .fa {
@@ -365,7 +363,7 @@ span {
 }
 .card_menu_checkbox .fa-check {
   font-size: 20px;
-  border: 20px solide white;
+  border: 10px solid white;
   border-radius: 50%;
   background-color: white;
   color: #99E2D0;
