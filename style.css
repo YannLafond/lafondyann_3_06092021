@@ -498,6 +498,15 @@ header {
   color: #9356DC;
 }
 
+@media only screen and (max-width: 375px) {
+  .fonction__list--a p, .fonction__list--b p {
+    font-size: 0.8em;
+    margin-left: 30px;
+  }
+  .fonction__list--a .fas, .fonction__list--b .fas {
+    left: 30px;
+  }
+}
 @media only screen and (min-width: 1024px) {
   .head {
     display: flex;
@@ -534,9 +543,6 @@ header {
 #restaurant {
   padding: 20px 10px;
   background-color: #f6f6f6;
-}
-#restaurant h2 {
-  margin-left: 10px;
 }
 
 .card_restaurant {

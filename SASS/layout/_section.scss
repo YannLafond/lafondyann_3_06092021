@@ -75,6 +75,9 @@
     @include general_box_shadows;
     background-color: #f6f6f6;
 
+        
+
+
         &::before {
             counter-increment: countlist 1;
             content: counter(countlist) " ";
@@ -103,7 +106,23 @@
      }
 }
 
+@media only screen and (max-width: 375px ) {
 
+    .fonction__list--a {
+
+        p {
+
+            font-size: 0.8em;
+            margin-left: 30px;
+        }
+
+        .fas {
+
+            left: 30px;
+        }
+    }
+
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -154,12 +173,8 @@
 #restaurant {
 
     padding: 20px 10px;
-    background-color: #f6f6f6;   
-    
-        h2 {
-            margin-left: 10px;
-        }
-}
+    background-color: #f6f6f6;    
+}       
 
 .card_restaurant {
     @include general_box_shadows;       
